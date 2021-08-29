@@ -19,6 +19,5 @@ Then("enter {string} into {string}", (txt, id) => {
 });
 
 Then("check {string} has text {string}", (el, txt) => {
-  // have.text does not work. why?
   cy.get(el).should("have.value", txt);
 });
